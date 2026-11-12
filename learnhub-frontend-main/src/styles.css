@@ -1,0 +1,127 @@
+:root {
+  --learnhub-blue: #2457c5;
+  --learnhub-green: #1b8a5a;
+  --learnhub-ink: #172033;
+  --learnhub-soft: #f5f7fb;
+}
+
+body {
+  margin: 0;
+  color: var(--learnhub-ink);
+  background: var(--learnhub-soft);
+}
+
+.navbar-brand {
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.hero-band {
+  background:
+    linear-gradient(rgba(15, 39, 87, 0.78), rgba(15, 39, 87, 0.72)),
+    url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80') center/cover;
+  color: #fff;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+}
+
+.page-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 28px 16px;
+}
+
+.dashboard-shell {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  min-height: calc(100vh - 56px);
+}
+
+.sidebar {
+  background: #ffffff;
+  border-right: 1px solid #e6e9f0;
+  padding: 18px;
+}
+
+.sidebar a {
+  color: #263247;
+  border-radius: 8px;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+  background: #eaf1ff;
+  color: var(--learnhub-blue);
+}
+
+.stat-card,
+.course-card,
+.content-panel {
+  background: #fff;
+  border: 1px solid #e6e9f0;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(23, 32, 51, 0.04);
+}
+
+.stat-card {
+  padding: 18px;
+}
+
+.course-card {
+  height: 100%;
+  padding: 18px;
+}
+
+.content-panel {
+  padding: 20px;
+}
+
+.badge-soft {
+  background: #eaf7f0;
+  color: var(--learnhub-green);
+}
+
+.btn-primary {
+  background: var(--learnhub-blue);
+  border-color: var(--learnhub-blue);
+}
+
+.btn-success {
+  background: var(--learnhub-green);
+  border-color: var(--learnhub-green);
+}
+
+.table-responsive {
+  background: #fff;
+  border-radius: 8px;
+}
+
+@media (max-width: 840px) {
+  .dashboard-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    border-right: 0;
+    border-bottom: 1px solid #e6e9f0;
+  }
+}
+
+
+/* Added for the LearnHub learning tools */
+.learning-note {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #fbfcff;
+  padding: 14px;
+}
+.note-content {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
